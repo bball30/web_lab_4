@@ -1,0 +1,19 @@
+<div class="logout-bar">
+  Вы вошли, как <b>"{{ getUsername() }}"</b>
+  <button class="exit-btn" (click)="logout()">выйти</button>
+</div>
+<div class="area-and-table">
+  <div class="left-part">
+    <div class="canvas">
+      <app-point-area></app-point-area>
+    </div>
+    <div class="form">
+      <app-point-form></app-point-form>
+    </div>
+  </div>
+  <div class="right-part">
+    <app-point-table></app-point-table>
+  </div>
+</div>
+
+

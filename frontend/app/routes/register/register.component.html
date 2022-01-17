@@ -1,0 +1,22 @@
+<div class="register-form-div">
+  <div class="register-form">
+    <h2>Регистрация</h2>
+    <div class="register-form-row">
+      <label class="register-form-cell" for="login">Логин:  &nbsp;</label>
+      <input class="register-form-cell" type="text" name="login" id="login" [formControl]="username"><br>
+      <label class="errors">{{ usernameErrors }}</label>
+    </div>
+
+    <div class="register-form-row">
+      <label class="register-form-cell" for="password" id="password-for">Пароль:</label>
+      <input class="register-form-cell" type="password" name="password" id="password" [formControl]="password"><br>
+      <label class="errors" >{{ passwordErrors }}</label>
+    </div>
+    <div class="register-form-row register-btn">
+      <button class="register-btn" (click)="register()">Зарегистрироваться</button>
+    </div>
+    <div class="register-form-row">
+      Уже есть аккаунт? <a href="/login">Войти</a>
+    </div>
+  </div>
+</div>

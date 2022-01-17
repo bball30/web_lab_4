@@ -1,0 +1,36 @@
+<div class="point-form">
+  <div class="point-form-row">
+    <label >Выберете X:<br></label>
+    <button *ngFor="let xVal of xValues" [value]="xVal" (click)="setX(xVal)">{{xVal}}</button>
+  </div>
+  <div class="point-form-row">
+    <label >Сейчас X: </label>
+    <input readonly id="xInput" value="{{ x.value }}" >
+  </div>
+
+  <div class="point-form-row">
+    <label for="y">Введите Y:</label>
+    <input type="text" id="y" maxlength="6" [formControl]="y">
+  </div>
+  <div class="point-form-row">
+    <label class="errors" >{{ yError }}</label>
+  </div>
+
+  <div class="point-form-row">
+    <label >Выберете R:<br></label>
+    <button *ngFor="let rVal of rValues" [value]="rVal" (click)="setInputR(rVal)">{{rVal}}</button>
+  </div>
+  <div class="point-form-row">
+    <label >Сейчас R: </label>
+    <input readonly [value]="_r.value">
+  </div>
+  <div class="point-form-row">
+    <label class="errors">{{ rError }}</label>
+  </div>
+
+  <div class="point-form-row">
+    <button class="point-form-btn" (click)="submit()">Отправить</button>
+    <button class="point-form-btn" (click)="reset()">Очистить</button>
+    <button class="point-form-btn" (click)="delete()">Удалить</button>
+  </div>
+</div>

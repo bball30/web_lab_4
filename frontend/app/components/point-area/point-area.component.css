@@ -1,0 +1,14 @@
+.canvas-div {
+  text-align: left;
+  padding: 15px;
+}
+
+.title {
+  font-size: 16pt;
+  padding: 10px;
+}
+
+.errors {
+  font-size: 14px;
+  color: #F00;
+}

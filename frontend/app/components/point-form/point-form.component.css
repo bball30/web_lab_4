@@ -1,0 +1,24 @@
+.point-form{
+  margin-top: 20px;
+  width: 100%;
+}
+
+.point-form-row{
+  margin: 5px ;
+  text-align: center;
+}
+
+.point-form-btn{
+  margin-left: 20px;
+}
+
+button {
+  font-size: 10pt;
+  padding: 5px;
+  margin: 2px;
+}
+
+.errors {
+  font-size: 14px;
+  color: #F00;
+}

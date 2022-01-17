@@ -1,0 +1,57 @@
+.login-form-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form{
+  margin-top: 1rem;
+  font-size: 16pt;
+}
+
+.login-form-row{
+  margin-top: 1rem;
+}
+
+.login-form-cell{
+  margin: 0 10px;
+}
+
+.login-btn{
+  text-align: center;
+  align-content: center;
+  font-size: 16pt;
+
+}
+
+.errors {
+  font-size: 14px;
+  color: #F00;
+}
+
+/* TABLET */
+@media (min-width: 781px) and (max-width: 1098px){
+  h2{
+    text-align: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 781px) {
+  h2{
+    text-align: center;
+  }
+
+  #password-for:after,#login-for:after{
+    content: "\A";
+    white-space: pre;
+  }
+
+  .login-form,.login-form-row{
+    width: 95%;
+  }
+
+  #login,#password{
+    width: 100%;
+  }
+}

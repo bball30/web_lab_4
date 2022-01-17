@@ -1,0 +1,21 @@
+<div class="login-form-div">
+  <div class="login-form">
+    <h2>Авторизация</h2>
+    <div class="login-form-row">
+      <label class="login-form-cell" for="login">Логин:  &nbsp;</label>
+      <input class="login-form-cell" type="text" name="login" id="login" [formControl]="username"><br>
+      <label class="errors" >{{ usernameErrors }}</label>
+    </div>
+    <div class="login-form-row">
+      <label class="login-form-cell" for="password">Пароль:</label>
+      <input class="login-form-cell" type="password" name="password" id="password" [formControl]="password"><br>
+      <label class="errors" >{{ passwordErrors }}</label>
+    </div>
+    <div class="login-form-row login-btn">
+      <button class="login-btn" (click)="login()">Войти</button>
+    </div>
+    <div class="login-form-row">
+      Ещё нет аккаунта? <a href="/register">Создать</a>
+    </div>
+  </div>
+</div>

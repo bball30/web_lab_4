@@ -1,0 +1,39 @@
+.point-table {
+  grid-area: tbl;
+  text-align: center;
+  border-collapse: collapse;
+  color: #000;
+}
+
+.point-table td {
+  padding: 5px;
+  font-size: 13pt;
+}
+
+.table-header:hover {
+  background-color: #c8b5e9;
+}
+
+.green {
+  background-color: #1cfef7;
+}
+
+.red {
+  background-color: #f5b2fe;
+}
+
+
+/* TABLET */
+@media (min-width: 781px) and (max-width: 1098px){
+  .point-table{
+    width: 700px;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 781px){
+  .point-table{
+    width: 100%;
+  }
+}
