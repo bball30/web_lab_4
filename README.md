@@ -36,3 +36,6 @@
 * Все результаты проверки должны сохраняться в базе данных под управлением СУБД PostgreSQL.
 
 * Для доступа к БД необходимо использовать Spring Data.
+
+![image](https://user-images.githubusercontent.com/71254089/149756118-bed715e9-f9c7-4d76-b21d-deac8de7bdc0.png)
+
